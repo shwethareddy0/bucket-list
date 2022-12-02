@@ -13,6 +13,7 @@ function Bucket(props) {
   const submitUpdate = (value) => {
     // TODO: Write logic to update the `edit` value in state after a user updates an entry in the list
     props.editBucketItem(edit.id, value);
+
     // TODO: Set the key:value pairs in the `edit` object back to empty strings
     setEdit({
       id: null,
@@ -47,7 +48,7 @@ function Bucket(props) {
         }}
       >
         {/* TODO: Add the item text here */}
-        {item.value}
+        {item.text}
       </div>
       <div className="icons">
         {/* TODO: Add an onClick event update the `edit` object with the `id`, `value`, and `eagerness` properties */}
